@@ -38,14 +38,6 @@ body {
     color: rgb(158, 95, 218);
 }
 
-.main {
-    margin: 0 3rem;
-}
-
-h1 {
-    color: rgb(158, 95, 218);
-}
-
 .left-banner {
     position: relative;
 }
@@ -78,4 +70,36 @@ h1 {
 .info-section {
     color: antiquewhite;
     letter-spacing: 0.1rem;
+}
+
+.main {
+    margin: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: rgb(158, 95, 218);
+    justify-self: left;
+}
+
+.form-section {
+    color: antiquewhite;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 1rem 8rem 1rem 0;
 }

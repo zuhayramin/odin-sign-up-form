@@ -35,7 +35,6 @@
         </div>
 
         <div class="main">
-            <h1>Sign-Up Form</h1>
             <div class="info-section">
                 This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
@@ -45,9 +44,49 @@
                 You know you want to!
             </div>
 
-            <form action=""></form>
+            <div class="form-section">
+                <h1>Let's do it!</h1>
+                <form action="httpbin.org/" method="post" id="sign-up-form">
+                    <div class="first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" />
+                    </div>
 
-            <div class="login"></div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" />
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
+
+                    <div class="phone">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" />
+                    </div>
+
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" />
+                    </div>
+
+                    <div class="confirm-password">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input
+                            type="password"
+                            name="confirm-password"
+                            id="confirm-password" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="login">
+                <button type="submit" form="sign-up-form">
+                    Create Account
+                </button>
+            </div>
         </div>
     </body>
 </html>
