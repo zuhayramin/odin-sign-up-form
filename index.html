@@ -46,7 +46,10 @@
 
             <div class="form-section">
                 <h1>Let's do it!</h1>
-                <form action="httpbin.org/" method="post" id="sign-up-form">
+                <form
+                    action="http://httpbin.org/post"
+                    method="post"
+                    id="sign-up-form">
                     <div class="first-name">
                         <label for="first-name">First Name</label>
                         <input type="text" name="first-name" id="first-name" />
@@ -82,10 +85,15 @@
                 </form>
             </div>
 
-            <div class="login">
-                <button type="submit" form="sign-up-form">
+            <div class="bottom-section">
+                <button type="submit" form="sign-up-form" class="submit-btn">
                     Create Account
                 </button>
+                <div class="login">
+                    Already have an account?&nbsp;<a href="" id="login-link"
+                        >Login</a
+                    >
+                </div>
             </div>
         </div>
     </body>
