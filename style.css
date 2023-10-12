@@ -149,3 +149,19 @@ form > div {
 #login-link:hover {
     color: rgb(211, 169, 251);
 }
+
+input {
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.2rem 0.6rem;
+}
+
+input:user-invalid,
+input:invalid {
+    box-shadow: 0 0 10px 1px red;
+    border: 1px solid red;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}
