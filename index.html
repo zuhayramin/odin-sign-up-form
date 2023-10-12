@@ -52,35 +52,61 @@
                     id="sign-up-form">
                     <div class="first-name">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" />
+                        <input
+                            type="text"
+                            minlength="3"
+                            name="first-name"
+                            id="first-name"
+                            placeholder="Bob" />
                     </div>
 
                     <div class="last-name">
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" />
+                        <input
+                            type="text"
+                            minlength="3"
+                            name="last-name"
+                            id="last-name"
+                            placeholder="Marley" />
                     </div>
 
                     <div class="email">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" />
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            placeholder="bman@gmail.com" />
                     </div>
 
                     <div class="phone">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" />
+                        <input
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            placeholder="0501002000" />
                     </div>
 
                     <div class="password">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" />
+                        <input
+                            type="password"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                            name="password"
+                            id="password"
+                            required />
                     </div>
 
                     <div class="confirm-password">
                         <label for="confirm-password">Confirm Password</label>
                         <input
                             type="password"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                             name="confirm-password"
-                            id="confirm-password" />
+                            id="confirm-password"
+                            required />
                     </div>
                 </form>
             </div>
